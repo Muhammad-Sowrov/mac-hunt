@@ -33,7 +33,7 @@ const displayPhones = phones => {
     // // show all
 
     showAll = document.getElementById('show-all-container');
-    if(phones.length > 10){
+    if(phones.length > 9){
         showAll.classList.remove('hidden');
     }
     else{
@@ -41,7 +41,7 @@ const displayPhones = phones => {
     }
     // only show 10 phone
     // console.log(phones.length);
-    phones = phones.slice(0,10);
+    phones = phones.slice(0,9);
     phones.forEach(phone =>{
         console.log(phone);
         const phoneCard = document.createElement('div');
@@ -54,7 +54,7 @@ const displayPhones = phones => {
             <h2 class="card-title">${phone.phone_name}</h2>
             <p>${phone.slug}?</p>
             <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
+            <button class="btn btn-primary">Show More</button>
             </div>
         </div>
         `
